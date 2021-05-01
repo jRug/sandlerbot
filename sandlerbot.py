@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
 import os
-import urllib3
+import time
 import tweepy
+import urllib3
 from bs4 import BeautifulSoup
 
 consumer_key = os.environ.get('CONSUMER_KEY')
@@ -59,6 +60,8 @@ def send_click_tweet():
         api.update_status(tweet_content)
 
 
-send_click_tweet()
+while True:
+    send_click_tweet()
+    time.sleep(86400)
 
 
