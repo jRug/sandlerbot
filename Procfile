@@ -1,1 +1,1 @@
-"worker: python sandlerbot.py" 
+worker: python sandlerbot.py 
