@@ -50,7 +50,7 @@ number_of_tweets = item.statuses_count
 
 
 def send_click_tweet():
-    num = number_of_tweets + 1
+    num = number_of_tweets
     tweet_content = text[num]
     if len(text[num]) < 280:
         api.update_status(tweet_content)
